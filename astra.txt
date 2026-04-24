@@ -1,0 +1,9 @@
+first command:
+
+ganache --port 8545
+
+second command:
+
+$env:GANACHE_URL = "http://127.0.0.1:8545"                                                                                               
+$env:CONTRACT_ADDRESS = "0x1992352bD207b818DB9D9D838e595C9d5090299f"
+uvicorn startup:app --reload --host 0.0.0.0 --port 8000
